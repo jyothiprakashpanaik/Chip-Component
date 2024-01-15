@@ -1,0 +1,71 @@
+.chips-input-wrapper {
+    position: relative;
+    height: 100vh;
+}
+
+.chips-input-container {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip {
+    background-color: #e0e0e0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 1px;
+    font-weight: 600;
+}
+
+.chip-remove {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+input {
+    margin-top: 8px;
+    padding: 8px;
+}
+
+.suggestions-list {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 8px;
+    width: 90%;
+    margin: auto;
+}
+
+.suggested-item {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggested-item .name{
+    font-weight: 500;
+}
+
+.suggested-item .emailId {
+    color: gray
+}
+
+.suggested-item:last-child {
+    border-bottom: none;
+}
